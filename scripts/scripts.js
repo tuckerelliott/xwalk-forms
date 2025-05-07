@@ -95,12 +95,18 @@ async function getAndApplyRenderDecisions() {
   });
 }
 
+alloy("configure", {
+  "edgeConfigId": "c457a178-33a5-4eae-a834-aea7fb5fed6f",
+  "orgId":"021654A663AF3D5A0A495FD4@AdobeOrg"
+});
+
+/**
 let alloyLoadedPromise = initWebSDK('./alloy.js', {
     datastreamId: 'c457a178-33a5-4eae-a834-aea7fb5fed6f',
     orgId: '021654A663AF3D5A0A495FD4@AdobeOrg',
   });;
  getAndApplyRenderDecisions();
-/** if (getMetadata('target')) {
+ if (getMetadata('target')) {
   alloyLoadedPromise.then(() => getAndApplyRenderDecisions());
 }
 **/
